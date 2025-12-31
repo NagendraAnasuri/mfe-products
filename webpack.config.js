@@ -34,10 +34,10 @@ module.exports = {
       exposes: {
         "./ProductsApp": "./src/ProductsApp", // exported module
       },
-    //   shared: {
-    //     react: { singleton: true, requiredVersion: false },
-    //     "react-dom": { singleton: true, requiredVersion: false },
-    //   },
+      shared: {
+        react: { singleton: true, requiredVersion: false },
+        "react-dom": { singleton: true, requiredVersion: false },
+      },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
